@@ -155,6 +155,7 @@ app.get('/inbound', function(req, res) {
 
   res.writeHead(200, {'Content-Type': 'text/xml'});
   res.end(twiml.toString());
+  user.stage++;
 });
 
 app.listen(4444, function() {
