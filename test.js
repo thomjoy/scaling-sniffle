@@ -108,6 +108,11 @@ var questions = {
 
 app.get('/inbound', function(req, res) {
 
+  if (! req.query) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end("It works!");
+  }
+
   var params = req.query;
   var messageBody = req.query.Body.toLowerCase();
   var userId = req.query.From;
