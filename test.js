@@ -60,7 +60,7 @@ var questions = {
     invalidResponse: 'Stage 1, invalid Response'
   },
   stage2: {
-    q: ''
+    q: '',
     validResponses: ['tw', 'twix', 'sn', 'snickers'],
     replies: {
       'tw': 'Twix it is! Do you want (1): one or (2) two?',
@@ -155,6 +155,7 @@ app.get('/inbound', function(req, res) {
 
   res.writeHead(200, {'Content-Type': 'text/xml'});
   res.end(twiml.toString());
+
   user.stage++;
 });
 
