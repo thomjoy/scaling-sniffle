@@ -130,6 +130,8 @@ app.get('/inbound', function(req, res) {
     users[userId].stage = 0;
   }
 
+  console.log("current user: " + userId + ", stage " + user[userId].stage);
+
   stage = user[userId].stage;
   var stringStage = 'stage' + stage;
 
