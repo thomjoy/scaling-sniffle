@@ -111,6 +111,7 @@ app.get('/inbound', function(req, res) {
   if (! req.query) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end("It works!");
+    return;
   }
 
   var params = req.query;
