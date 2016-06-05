@@ -96,7 +96,7 @@ var questions = {
     q: '',
     validResponses: ['not', 'cc', 'credit card', 'yes', 'no'],
     replies: {
-      'not': 'I thought so. Your treats will be with you shortly! Was great chatting to you. Have a nice day!'
+      'not': 'I thought so. Your treats will be with you shortly! Was great chatting to you. Have a nice day!',
       'cc': "I can't believe you did that! Don't send your CC details! Your treats will be with you shortly. Have a nice day!",
       'credit card': "I can't believe you did that! Don't send your CC details! Your treats will be with you shortly. Have a nice day!",
       'yes': '',
